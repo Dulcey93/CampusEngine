@@ -7,7 +7,7 @@
     }
     100% {
         opacity: 1;
-     }
+    }
 }
 html{
     min-height: 100%;
@@ -31,16 +31,40 @@ nav{
     width: 100%;
 }
 
-
- /* contenido del nav */
-.container1{
-    background-image: url(../images/XiP3qS0.jpg);
+nav ul{
+    list-style: none;
     display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    width: 100%;
+}
+nav ul div{
+    display: flex;;
+    align-items: center;
+    justify-content: space-between;
+    width: 45%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* nav children style*/
+.container1{
+    background-image: url(/images/XiP3qS0.jpg);
     padding: 10px;
+    display: flex;
     flex-direction: row;
     margin: 0;
     text-align: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 250px;
     flex-wrap:nowrap;
     width:100%;
@@ -57,7 +81,14 @@ nav{
     height: inherit;
     border-radius: 10px;
     align-items: center;
-    
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0;
+    height: inherit;
+    border-radius: 10px;
+    list-style: none;
     
 }
 
@@ -71,7 +102,8 @@ nav{
 .FAQ{
     display: flex;
     text-align: center;
-    justify-content: center
+    justify-content: center;
+    flex-direction: column;
 }
 .FAQ h1{
     font-size: 30px;
@@ -94,12 +126,10 @@ nav{
     outline: none;
     transition: 0.4s;
     }
-  
 
 .active, .accordion:hover {
     background-color: #748fe7a8;
-  }
-  
+}
 .panel {
     background-color: white;
     display: none;

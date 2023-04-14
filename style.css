@@ -7,7 +7,7 @@
     }
     100% {
         opacity: 1;
-     }
+    }
 }
 html{
     min-height: 100%;
@@ -30,7 +30,30 @@ nav{
     width: 100%;
 }
 
-
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    width: 100%;
+}
+nav ul div{
+    display: flex;;
+    align-items: center;
+    justify-content: space-between;
+    width: 45%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
 
 /* nav children style*/
 .container1{
@@ -40,7 +63,7 @@ nav{
     flex-direction: row;
     margin: 0;
     text-align: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 250px;
     flex-wrap:nowrap;
     width:100%;
@@ -57,7 +80,14 @@ nav{
     height: inherit;
     border-radius: 10px;
     align-items: center;
-    
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0;
+    height: inherit;
+    border-radius: 10px;
+    list-style: none;
     
 }
 
@@ -65,7 +95,6 @@ nav{
     background-color:rgb(90, 94, 224);
     cursor: pointer;
 }
-
 
 
 /* subtitulos */
@@ -83,6 +112,11 @@ nav{
 .first-message h3{
     margin-top: 60px;
 }
+.homepage p{
+    margin-top: 10px;
+    text-align: center;
+    width: 80%;
+}
 .homepage{
     display: flex;
     margin-top: 20px;
@@ -90,10 +124,7 @@ nav{
     justify-content: center;
     flex-direction: row;
 }
-.homepage p{
-    align-items: center;
-    width: 50%;
-}
+
 
 
 
@@ -102,18 +133,24 @@ nav{
     margin-top: 100px;
     display: flex;
     text-align: center;
-    justify-content: center;
+    justify-content: end;
     flex-direction: row;
     gap: 100px;
     margin-right: 150px;
+    padding-right: 20%;
+    flex-wrap:nowrap;
 }
-.contactanos a{
-    
-    margin-top: 10px;
+
+.contactanos ul li{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 .social{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: start;
 }
 .social a{
     text-decoration: none;
@@ -137,7 +174,7 @@ nav{
 
     .homepage p{
 
-        width: 50%;
+        width: 80%;
     }
     .first-message h1{
         margin-top: 60px;
@@ -153,7 +190,7 @@ nav{
 @media (max-width: 1920px){
 
     .homepage p{
-        width: 30%;
+        width: 80%;
     }
     .first-message h1{
         margin-top: 80px;
@@ -167,5 +204,3 @@ nav{
 
     }
 }
-   
-   
