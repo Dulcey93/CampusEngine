@@ -58,7 +58,7 @@ nav ul div{
 
 /* nav children style*/
 .container1{
-    background-image: url(/images/XiP3qS0.jpg);
+    background-image: url(../images/XiP3qS0.jpg);
     padding: 10px;
     display: flex;
     flex-direction: row;
